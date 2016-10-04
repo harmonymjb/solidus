@@ -1,3 +1,5 @@
+<% admin_layout 'centered' %>
+
 <%= render :partial => 'spree/admin/shared/product_tabs', :locals => { :current => 'Images' } %>
 
 <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @image } %>
@@ -13,13 +15,14 @@
 <%= form_for [:admin, @product, @image], :html => { :multipart => true } do |f| %>
   <fieldset data-hook="edit_image">
     <legend align="center"><%= @image.attachment_file_name%></legend>
-
     <div class="row">
-      <div data-hook="thumbnail" class="field col-xs-2 align-center">
-        <%= f.label Spree.t(:thumbnail) %><br>
-        <%= link_to image_tag(@image.attachment.url(:small)), @image.attachment.url(:product) %>
+      <div class="col-lg-2 col-xs-12">
+        <div data-hook="thumbnail" class="field align-center">
+          <%= f.label Spree.t(:thumbnail) %><br>
+          <%= link_to image_tag(@image.attachment.url(:small)), @image.attachment.url(:product) %>
+        </div>
       </div>
-      <div class="col-xs-10">
+      <div class="col-lg-10 col-xs-12">
         <%= render :partial => 'form', :locals => { :f => f } %>
       </div>
       <div class="clear"></div>
