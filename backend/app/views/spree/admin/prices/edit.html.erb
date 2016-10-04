@@ -1,3 +1,5 @@
+<% admin_layout 'centered' %>
+
 <%= render 'spree/admin/shared/product_tabs', current: 'Prices' %>
 
 <%= form_for @price, url: spree.admin_product_price_path(@product, @price) do |f| %>
