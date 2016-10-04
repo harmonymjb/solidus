@@ -306,3 +306,31 @@ fieldset {
 .form-buttons {
   text-align: center;
 }
+
+.form-section {
+  margin: 10px 0px;
+  padding: 10px 0px;
+  background: very-light($color-3, 4);
+  border-style: solid;
+  border-color: very-light($color-3, 32);
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.text-field-addon {
+  float: right;
+  margin-right: 10px;
+  margin-top: -23px;
+  position: relative;
+  pointer-events: none;
+}
+
+.centered-form {
+  @include margin (null auto);
+  max-width: map-get($container-max-widths, "xl");
+}
+
+.left-aligned-form {
+  @include margin (null null auto null);
+  max-width: map-get($container-max-widths, "xl");
+}
