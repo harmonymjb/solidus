@@ -1,3 +1,5 @@
+<% admin_layout 'centered' %>
+
 <%= render :partial => 'spree/admin/shared/product_tabs', :locals => { :current => 'Variants' } %>
 
 <% admin_breadcrumb(link_to plural_resource_name(Spree::Variant), admin_product_variants_path(@product)) %>
