@@ -306,3 +306,8 @@ fieldset {
 .form-buttons {
   text-align: center;
 }
+
+.centered-form {
+  @include margin (null auto);
+  max-width: map-get($container-max-widths, "xl");
+}
