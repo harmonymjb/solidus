@@ -4,7 +4,7 @@
 
 <% admin_breadcrumb(plural_resource_name(Spree::Variant)) %>
 
-<div id="new_variant_wrapper" data-hook class="centered-form"></div>
+<div id="new_variant_wrapper" data-hook class="left-aligned-form"></div>
 
 <% if @variants.any? || @product.variants.only_deleted.any?%>
   <%= render "table_filter", product: @product %>
