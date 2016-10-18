@@ -6,6 +6,8 @@
   </li>
 <% end if can?(:create, Spree::Product) %>
 
+<div id="new_price_wrapper" class="left-aligned-form"></div>
+
 <% content_for :table_filter_title do %>
   <%= Spree.t(:search) %>
 <% end %>
