@@ -23,19 +23,16 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-xs-12">
-            <%= f.field_container :name do %>
-              <%= f.label :name, class: 'required' %><br />
-              <%= f.text_field :name, :class => 'fullwidth title', :required => true %>
-              <%= f.error_message_on :name %>
-            <% end %>
-          </div>
-
-          <div data-hook="new_product_prototype" class="col-md-6 col-xs-12">
-            <%= f.field_container :prototype do %>
-              <%= f.label :prototype_id, Spree::Prototype.model_name.human %><br />
-              <%= f.collection_select :prototype_id, Spree::Prototype.all, :id, :name, {:include_blank => true}, {:class => 'select2 fullwidth'} %>
-            <% end %>
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <%= f.field_container :name do %>
+                  <%= f.label :name, class: 'required' %><br />
+                  <%= f.text_field :name, :class => 'fullwidth title', :required => true %>
+                  <%= f.error_message_on :name %>
+                <% end %>
+              </div>
+            </div>
           </div>
 
           <div data-hook="new_product_price" class="col-md-3 col-xs-6">
