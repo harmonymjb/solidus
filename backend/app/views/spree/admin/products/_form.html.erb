@@ -148,36 +148,6 @@
           </div>
         <% end %>
       </div>
-
-      <div class="row form-section">
-        <div class="col-xs-12">
-          <h4><%= I18n.t(:search_engine_optimization, scope: [:spree, :product_sections]) %></h4>
-        </div>
-
-        <div data-hook="admin_product_form_meta" class="col-xs-12">
-          <div data-hook="admin_product_form_meta_title">
-            <%= f.field_container :meta_title do %>
-              <%= f.label :meta_title %>
-              <%= f.text_field :meta_title, :class => 'fullwidth' %>
-            <% end %>
-          </div>
-
-          <div data-hook="admin_product_form_meta_keywords">
-            <%= f.field_container :meta_keywords do %>
-              <%= f.label :meta_keywords %>
-              <%= f.text_field :meta_keywords, :class => 'fullwidth' %>
-            <% end %>
-          </div>
-
-          <div data-hook="admin_product_form_meta_description">
-            <%= f.field_container :meta_description do %>
-              <%= f.label :meta_description %>
-              <%= f.text_field :meta_description, :class => 'fullwidth' %>
-            <% end %>
-          </div>
-        </div>
-
-      </div>
     </div>
 
     <div data-hook="admin_product_form_right" class="col-lg-4 col-xs-12">
@@ -231,6 +201,46 @@
           </div>
         <% end %>
 
+      </div>
+    </div>
+    <div class="col-lg-8 col-xs-12" >
+      <div class="row form-section">
+        <div class="col-xs-12">
+          <h4><%= I18n.t(:search_engine_optimization, scope: [:spree, :product_sections]) %></h4>
+          <div class="hidden-lg-up">
+            <p><%= I18n.t(:search_engine_optimization, scope: [:spree, :hints, "spree/product"]) %></p>
+          </div>
+        </div>
+
+        <div data-hook="admin_product_form_meta" class="col-xs-12">
+          <div data-hook="admin_product_form_meta_title">
+            <%= f.field_container :meta_title do %>
+              <%= f.label :meta_title %>
+              <%= f.text_field :meta_title, :class => 'fullwidth' %>
+            <% end %>
+          </div>
+
+          <div data-hook="admin_product_form_meta_keywords">
+            <%= f.field_container :meta_keywords do %>
+              <%= f.label :meta_keywords %>
+              <%= f.text_field :meta_keywords, :class => 'fullwidth' %>
+            <% end %>
+          </div>
+
+          <div data-hook="admin_product_form_meta_description">
+            <%= f.field_container :meta_description do %>
+              <%= f.label :meta_description %>
+              <%= f.text_area :meta_description, :rows => 3, :class => 'fullwidth' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 hidden-md-down">
+      <div class="row form-section">
+        <div class="col-xs-12">
+          <p><%= I18n.t(:search_engine_optimization, scope: [:spree, :hints, "spree/product"]) %></p>
+        </div>
       </div>
     </div>
   </div>

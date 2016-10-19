@@ -1172,6 +1172,7 @@ en:
         cart_tax_country_iso: "This determines which country is used for taxes on carts (orders which don't yet have an address).<br/> Default: None."
         delay_publishing: "Leave this empty if you want this product to be available in your store right away. Set a date in the future to hide it until then."
         variant_setup: "Does this product come in multiple variations like size and color? Set these here so you can configure them in the variants tab."
+        search_engine_optimization: "Meta descriptions can be any length, but search engines generally truncate snippets longer than 160 characters. It is best to keep meta descriptions between 150 and 160 characters."
       spree/variant:
         tax_category: "This determines what kind of taxation is applied to this variant.<br/> Default: Use tax category of the product associated with this variant"
         deleted: "Deleted Variant"
