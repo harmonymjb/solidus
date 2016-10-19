@@ -51,7 +51,7 @@
 
       <div class="row form-section">
         <div class="col-xs-12">
-          <h3>Pricing</h3>
+          <h4><%= I18n.t(:pricing, scope: [:spree, :product_sections]) %></h4>
         </div>
 
         <div class="col-xs-12">
@@ -117,7 +117,7 @@
 
       <div class="row form-section">
         <div class="col-xs-12">
-          <h3>Shipping</h3>
+          <h4><%= I18n.t(:shipping, scope: [:spree, :product_sections]) %></h4>
         </div>
 
         <div class="col-xs-12">
@@ -151,7 +151,7 @@
 
       <div class="row form-section">
         <div class="col-xs-12">
-          <h3>Search Engine Optimization</h3>
+          <h4><%= I18n.t(:search_engine_optimization, scope: [:spree, :product_sections]) %></h4>
         </div>
 
         <div data-hook="admin_product_form_meta" class="col-xs-12">
@@ -184,7 +184,8 @@
       <div class="row form-section">
 
         <div class="col-xs-12">
-          <h4>Delay publishing</h4>
+          <h4><%= I18n.t(:delay_publishing, scope: [:spree, :product_sections]) %></h4>
+          <p><%= I18n.t(:delay_publishing, scope: [:spree, :hints, "spree/product"]) %></p>
         </div>
 
         <div data-hook="admin_product_form_available_on" class="col-xs-12">
@@ -197,7 +198,8 @@
         </div>
 
         <div class="col-xs-12">
-          <h4>Variant setup</h4>
+          <h4><%= I18n.t(:variant_setup, scope: [:spree, :product_sections]) %></h4>
+          <p><%= I18n.t(:variant_setup, scope: [:spree, :hints, "spree/product"]) %></p>
         </div>
 
         <div data-hook="admin_product_form_option_types" class="col-xs-12">

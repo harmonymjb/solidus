@@ -1170,6 +1170,8 @@ en:
         tax_category: "This determines what kind of taxation is applied to this product.<br/> Default: None"
       spree/store:
         cart_tax_country_iso: "This determines which country is used for taxes on carts (orders which don't yet have an address).<br/> Default: None."
+        delay_publishing: "Leave this empty if you want this product to be available in your store right away. Set a date in the future to hide it until then."
+        variant_setup: "Does this product come in multiple variations like size and color? Set these here so you can configure them in the variants tab."
       spree/variant:
         tax_category: "This determines what kind of taxation is applied to this variant.<br/> Default: Use tax category of the product associated with this variant"
         deleted: "Deleted Variant"
@@ -1561,6 +1563,12 @@ en:
       product_source:
         group: From product group
         manual: Manually choose
+    product_sections:
+      pricing: Pricing
+      shipping: Shipping
+      search_engine_optimization: Search Engine Optimization
+      delay_publishing: Delay Publishing
+      variant_setup: Variant Setup
     products: Products
     promotion: Promotion
     promotionable: Promotable
